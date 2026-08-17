@@ -1,0 +1,14 @@
+# Environments & Cache
+.venv/
+env/
+__pycache__/
+*.pyc
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.log

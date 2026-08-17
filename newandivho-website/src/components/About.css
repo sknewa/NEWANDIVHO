@@ -1,0 +1,118 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.about-card {
+  border-radius: 16px;
+  padding: 28px;
+  margin-bottom: 24px;
+  transition: all 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-3px);
+}
+
+.about-card h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: #001f3f;
+}
+
+.about-card p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+.vision-card {
+  background: linear-gradient(135deg, #e8f4fd, #d0e8f8);
+  border-left: 4px solid #001f3f;
+}
+
+.mission-card {
+  background: linear-gradient(135deg, #fff3e8, #ffe0c8);
+  border-left: 4px solid #ff6600;
+}
+
+.management-card {
+  background: linear-gradient(135deg, #f0f4ff, #e0e8ff);
+  border-left: 4px solid #4a6cf7;
+}
+
+.compliance-card {
+  background: linear-gradient(135deg, #e8f8f0, #d0f0e0);
+  border-left: 4px solid #28a745;
+}
+
+.director-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.director-avatar {
+  width: 52px;
+  height: 52px;
+  background: #001f3f;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.director-info strong {
+  display: block;
+  font-size: 0.95rem;
+  color: #001f3f;
+}
+
+.director-info span {
+  font-size: 0.8rem;
+  color: #6c757d;
+}
+
+.compliance-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.compliance-item {
+  background: rgba(255,255,255,0.7);
+  border-radius: 8px;
+  padding: 10px 14px;
+}
+
+.comp-label {
+  display: block;
+  font-size: 0.72rem;
+  color: #6c757d;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.comp-value {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #001f3f;
+}
+
+@media (max-width: 900px) {
+  .about-grid { grid-template-columns: 1fr; }
+  .compliance-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 480px) {
+  .compliance-grid { grid-template-columns: 1fr; }
+}
